@@ -1,47 +1,32 @@
-<div align="center">
-<img alt="Portfolio" src="https://github.com/dillionverma/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
-</div>
+# Mohamed Ahshik — Portfolio
 
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdillionverma%2Fportfolio)
+Personal portfolio website for Mohamed Ahshik, built with Next.js, shadcn/ui, and Magic UI.
 
-Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
+## Getting Started
 
-# Features
+```bash
+pnpm install
+pnpm dev
+```
 
-- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
-- Includes a blog
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+Open [http://localhost:3000](http://localhost:3000).
 
-# Getting Started Locally
+## Building
 
-1. Clone this repository to your local machine:
+```bash
+pnpm build
+pnpm start
+```
 
-   ```bash
-   git clone https://github.com/dillionverma/portfolio
-   ```
+## Editing Content
 
-2. Move to the cloned directory
+All site content lives in [`src/data/resume.tsx`](./src/data/resume.tsx) — name, summary, skills, work, education, projects, and contact links.
 
-   ```bash
-   cd portfolio
-   ```
+## Placeholders
 
-3. Install dependencies:
+- **Profile photo:** currently the initials fallback ("MA"). Set `DATA.avatarUrl` to a file in `public/` (e.g. `"/me.png"`) to use a real photo.
+- **Work / education logos:** gray circles. Set `logoUrl` per entry.
+- **Project images:** gray blocks. Set `image` (or `video`) per project.
+- **Site URL:** `DATA.url` is a placeholder (`https://ahshik.vercel.app`); update once deployed.
 
-   ```bash
-   pnpm install
-   ```
-
-4. Start the local Server:
-
-   ```bash
-   pnpm dev
-   ```
-
-5. Open the [Config file](./src/data/resume.tsx) and make changes
-
-# License
-
-Licensed under the [MIT license](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
+The original template is kept for reference at `template/magicuidesign-portfolio-5ef12e4/`.
