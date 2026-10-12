@@ -25,7 +25,7 @@ All site content lives in [`src/data/resume.tsx`](./src/data/resume.tsx) — nam
 ## Placeholders
 
 - **Profile photo:** currently the initials fallback ("MA"). Set `DATA.avatarUrl` to a file in `public/` (e.g. `"/me.png"`) to use a real photo.
-- **Work / education logos:** gray circles. Set `logoUrl` per entry.
+- **Work / education logos:** set from `public/logos/` via `logoUrl` per entry. An empty `logoUrl` falls back to a gray circle.
 - **Project images:** gray blocks. Set `image` (or `video`) per project.
 - **Site URL:** `DATA.url` is a placeholder (`https://ahshik.vercel.app`); update once deployed.
 
