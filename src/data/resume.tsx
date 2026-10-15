@@ -86,11 +86,7 @@ export const DATA = {
       logoUrl: "/logos/deriv.jpeg",
       start: "January 2026",
       end: undefined,
-      description: `- Contributed to AI integration projects within the marketing function, building automated pipelines to detect, generate, and publish market-moving events using LLMs.
-- Developed LLM-based insights (Claude) to analyze quarterly stock performance, incorporating prompt engineering and structured output generation.
-- Integrated generative AI tools (Nano Banana) via APIs to produce on-brand visual assets for social media campaigns.
-- Developed an AI-powered video generation pipeline combining text-to-speech, background audio, and automated content generation for scalable media production.
-- Engineered an AI-driven video processing tool to automate podcast editing, utilizing machine learning to isolate key Q&A segments, format multi-cam side-by-side views, and apply programmatic branding to slash post-production turnaround from hours to minutes.`,
+      description: "",
     },
     {
       company: "AI Singapore - NUS",
@@ -100,12 +96,7 @@ export const DATA = {
       logoUrl: "/logos/aisingapore.jpeg",
       start: "September 2024",
       end: "June 2025",
-      description: `- Selected for the highly competitive 9-month AI Apprenticeship Programme (AIAP) through a rigorous technical assessment and interview process.
-- Completed intensive training in statistics, classical machine learning techniques (SVMs, Random Forest, Logistic Regression), and modern deep learning with LLMs such as DeepSeek-R1-Distill, SaulLM, and LLaMA.
-- Engineered a pipeline to synthesize annotated legal statutes by integrating structured legal data.
-- Built a domain-specific knowledge graph mapping legal Acts, Sections, and Case Law, enabling linkage between legislation and cases.
-- Developed and deployed a Retrieval-Augmented Generation (RAG) system with vector database integration, indexing legal text using dense embeddings for semantic retrieval.
-- Achieved automated section-level annotation by retrieving the top-cited cases for each statutory section and generating LLM-based annotation with paragraph-level source attribution.`,
+      description: "",
     },
     {
       company: "Rehabilitation Research Institute of Singapore - NTU",
@@ -115,9 +106,7 @@ export const DATA = {
       logoUrl: "/logos/ntu.edu.jpeg",
       start: "November 2019",
       end: "September 2024",
-      description: `- **Ability Data:** Managed the Qualisys Track Manager (QTM) motion capture system to collect Asian-centric motion data from over 200 subjects, conducted detailed data cleaning and processing, and served as the lead trainer for QTM operations across teams.
-- **Visual3D:** Built automation scripts using Visual3D and Python (Pandas, PyQt5) to streamline post-processing of large datasets, including a one-click system that automated modeling of 200 subjects' height, weight, and pipeline parameters.
-- **Markerless System:** Advanced a markerless tracking system that identifies anatomical points without traditional markers; improved quality-check scripts and built an analytical layer that generates detailed PDF reports via HTML and the Jinja templating library.`,
+      description: "",
     },
     {
       company: "Singapore Police Force",
@@ -127,7 +116,7 @@ export const DATA = {
       logoUrl: "/logos/Singapore_police_force.jpeg",
       start: "October 2015",
       end: "August 2017",
-      description: `- Received the Commander's Award for dedicated service in 2016, acknowledging exceptional commitment and professionalism in law enforcement tasks.`,
+      description: "",
     },
     {
       company: "Thales Solutions Asia Pte Ltd",
@@ -137,7 +126,7 @@ export const DATA = {
       logoUrl: "/logos/thalesgroup.jpeg",
       start: "October 2014",
       end: "December 2014",
-      description: `- Engineering internship at Thales Solutions Asia Pte Ltd.`,
+      description: "",
     },
   ],
   education: [
@@ -189,7 +178,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "https://opengraph.githubassets.com/1/mohamed-ahshik/rag_insurance",
+      image: "",
       video: "",
     },
     {
@@ -206,8 +195,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image:
-        "https://opengraph.githubassets.com/1/mohamed-ahshik/football_analysis_cv",
+      image: "",
       video: "",
     },
     {
@@ -224,8 +212,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image:
-        "https://opengraph.githubassets.com/1/mohamed-ahshik/AIProjectsCodes",
+      image: "",
       video: "",
     },
     {
@@ -242,8 +229,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image:
-        "https://opengraph.githubassets.com/1/mohamed-ahshik/machine_learning",
+      image: "",
       video: "",
     },
     {
@@ -260,8 +246,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image:
-        "https://opengraph.githubassets.com/1/mohamed-ahshik/arduinoSensorsProjectsCodes",
+      image: "",
       video: "",
     },
     {
@@ -278,8 +263,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image:
-        "https://opengraph.githubassets.com/1/mohamed-ahshik/arduinoSensorsProjectsCodes",
+      image: "",
       video: "",
     },
   ],
