@@ -32,12 +32,9 @@ export const DATA = {
   url: "https://ahshik.vercel.app",
   location: "Singapore",
   locationLink: "https://www.google.com/maps/place/singapore",
-  description:
-    "AI Engineer specialising in LLM-powered automation, retrieval-augmented generation, and computer vision.",
-  summary: `Dedicated and detail-oriented Engineer with a robust background in mechatronics and artificial intelligence. Extensive experience involving complex projects in academic and professional settings, with a proven track record of delivering innovations in data capture, process automation, and system development.
-
-Skilled in leading cross-functional teams, training diverse groups, and executing high-impact research initiatives. Recognized for exceptional problem-solving abilities and a commitment to enhancing operational efficiencies and technological advancements.`,
-  avatarUrl: "",
+  description: "AI Engineer",
+  summary: `Dedicated and detail-oriented Engineer with a robust background in mechatronics and artificial intelligence. Extensive experience involving complex projects in academic and professional settings, with a proven track record of delivering innovations in data capture, process automation, and system development.`,
+  avatarUrl: "/profile_photo/1_profile_photo_ntu_square.jpeg",
   skills: [
     { name: "Python", icon: SiPython },
     { name: "TensorFlow", icon: SiTensorflow },
@@ -180,7 +177,7 @@ Skilled in leading cross-functional teams, training diverse groups, and executin
   projects: [
     {
       title: "Traditional RAG System",
-      href: "https://github.com/mohamed-ahshik",
+      href: "https://github.com/mohamed-ahshik/rag_insurance",
       dates: "Personal Project",
       description:
         "A document question-answering system with a Streamlit front end: uploaded documents are chunked, embedded, and indexed into a vector database; semantically similar chunks are retrieved for an LLM to generate grounded answers.",
@@ -188,16 +185,16 @@ Skilled in leading cross-functional teams, training diverse groups, and executin
       links: [
         {
           type: "GitHub",
-          href: "https://github.com/mohamed-ahshik",
+          href: "https://github.com/mohamed-ahshik/rag_insurance",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
+      image: "https://opengraph.githubassets.com/1/mohamed-ahshik/rag_insurance",
       video: "",
     },
     {
       title: "Player Detection in Football using YOLOv8",
-      href: "https://github.com/mohamed-ahshik",
+      href: "https://github.com/mohamed-ahshik/football_analysis_cv",
       dates: "Personal Project",
       description:
         "Fine-tuned YOLOv8 (pre-trained on COCO) to detect the ball, players, and referees in football footage. Used K-Means clustering on jersey colors from the top half of each bounding box to distinguish the two teams.",
@@ -205,16 +202,17 @@ Skilled in leading cross-functional teams, training diverse groups, and executin
       links: [
         {
           type: "GitHub",
-          href: "https://github.com/mohamed-ahshik",
+          href: "https://github.com/mohamed-ahshik/football_analysis_cv",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
+      image:
+        "https://opengraph.githubassets.com/1/mohamed-ahshik/football_analysis_cv",
       video: "",
     },
     {
       title: "Deep Learning Yoga Pose Classification",
-      href: "https://github.com/mohamed-ahshik",
+      href: "https://github.com/mohamed-ahshik/AIProjectsCodes",
       dates: "Academic Project",
       description:
         "Built a training dataset from anatomical coordinates and trained a deep learning model (OpenPose + TensorFlow) to classify yoga poses live from a webcam stream, exploring hyperparameters to optimise performance.",
@@ -222,16 +220,17 @@ Skilled in leading cross-functional teams, training diverse groups, and executin
       links: [
         {
           type: "GitHub",
-          href: "https://github.com/mohamed-ahshik",
+          href: "https://github.com/mohamed-ahshik/AIProjectsCodes",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
+      image:
+        "https://opengraph.githubassets.com/1/mohamed-ahshik/AIProjectsCodes",
       video: "",
     },
     {
       title: "Object Detection",
-      href: "https://github.com/mohamed-ahshik",
+      href: "https://github.com/mohamed-ahshik/machine_learning",
       dates: "Academic Project",
       description:
         "Explored open-source packages including YOLO and ResNet to train a model for detecting unique objects not originally in the training sets (sunny-side-up eggs alongside human figures) and implemented non-maximum suppression to keep the highest-confidence detection box.",
@@ -239,16 +238,17 @@ Skilled in leading cross-functional teams, training diverse groups, and executin
       links: [
         {
           type: "GitHub",
-          href: "https://github.com/mohamed-ahshik",
+          href: "https://github.com/mohamed-ahshik/machine_learning",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
+      image:
+        "https://opengraph.githubassets.com/1/mohamed-ahshik/machine_learning",
       video: "",
     },
     {
       title: "Optical Blood Pressure Monitoring System",
-      href: "https://github.com/mohamed-ahshik",
+      href: "https://github.com/mohamed-ahshik/arduinoSensorsProjectsCodes",
       dates: "Academic Project",
       description:
         "Developed a non-invasive, cuffless blood pressure monitoring system using pulse oximetry and Arduino. Applied photoplethysmography techniques to detect specific signal points in real time, enabling systolic and diastolic blood pressure measurement.",
@@ -256,16 +256,17 @@ Skilled in leading cross-functional teams, training diverse groups, and executin
       links: [
         {
           type: "GitHub",
-          href: "https://github.com/mohamed-ahshik",
+          href: "https://github.com/mohamed-ahshik/arduinoSensorsProjectsCodes",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
+      image:
+        "https://opengraph.githubassets.com/1/mohamed-ahshik/arduinoSensorsProjectsCodes",
       video: "",
     },
     {
       title: "Smart Home Appliances",
-      href: "https://github.com/mohamed-ahshik",
+      href: "https://github.com/mohamed-ahshik/arduinoSensorsProjectsCodes",
       dates: "Academic Project",
       description:
         "Engineered a system to control home appliances remotely over the internet by extracting IR data from a fan and integrating it with a Spark core carrying an IR sender, allowing appliance control from connected devices.",
@@ -273,11 +274,12 @@ Skilled in leading cross-functional teams, training diverse groups, and executin
       links: [
         {
           type: "GitHub",
-          href: "https://github.com/mohamed-ahshik",
+          href: "https://github.com/mohamed-ahshik/arduinoSensorsProjectsCodes",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
+      image:
+        "https://opengraph.githubassets.com/1/mohamed-ahshik/arduinoSensorsProjectsCodes",
       video: "",
     },
   ],

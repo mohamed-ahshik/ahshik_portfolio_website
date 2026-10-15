@@ -1,10 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import BlurFade from "@/components/magicui/blur-fade";
-import BlurFadeText from "@/components/magicui/blur-fade-text";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { PixelImage } from "@/components/ui/pixel-image";
+import { TextAnimate } from "@/components/ui/text-animate";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
-import Markdown from "react-markdown";
 import ContactSection from "@/components/section/contact-section";
 import ProjectsSection from "@/components/section/projects-section";
 import WorkSection from "@/components/section/work-section";
@@ -19,39 +18,65 @@ export default function Page() {
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 gap-y-6 flex flex-col md:flex-row justify-between">
             <div className="gap-2 flex flex-col order-2 md:order-1">
-              <BlurFadeText
-                delay={BLUR_FADE_DELAY}
+              <TextAnimate
+                as="h1"
+                animation="slideRight"
+                by="character"
+                startOnView={false}
+                delay={1.5}
+                duration={0.8}
                 className="text-3xl font-semibold tracking-tighter sm:text-4xl lg:text-5xl"
-                yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
-              />
-              <BlurFadeText
+              >
+                {DATA.name}
+              </TextAnimate>
+              <TextAnimate
+                as="p"
+                animation="slideRight"
+                by="character"
+                startOnView={false}
+                delay={1.9}
+                duration={0.6}
                 className="text-muted-foreground max-w-[600px] md:text-lg lg:text-xl"
-                delay={BLUR_FADE_DELAY}
-                text={DATA.description}
-              />
+              >
+                {DATA.description}
+              </TextAnimate>
             </div>
-            <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
-              <Avatar className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                <AvatarFallback>{DATA.initials}</AvatarFallback>
-              </Avatar>
+            <BlurFade delay={1.5} className="order-1 md:order-2">
+              <div className="size-24 md:size-32 rounded-full border shadow-lg ring-4 ring-muted overflow-hidden">
+                <PixelImage
+                  src={DATA.avatarUrl}
+                  grid="8x8"
+                  className="size-full md:size-full"
+                />
+              </div>
             </BlurFade>
           </div>
         </div>
       </section>
       <section id="about">
         <div className="flex min-h-0 flex-col gap-y-4">
-          <BlurFade delay={BLUR_FADE_DELAY * 3}>
-            <h2 className="text-xl font-bold">About</h2>
-          </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 4}>
-            <div className="prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
-              <Markdown>
-                {DATA.summary}
-              </Markdown>
-            </div>
-          </BlurFade>
+          <TextAnimate
+            as="h2"
+            animation="blurIn"
+            by="character"
+            startOnView={false}
+            duration={0.5}
+            className="text-xl font-bold"
+          >
+            About
+          </TextAnimate>
+          <div className="prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
+            <TextAnimate
+              as="p"
+              animation="blurIn"
+              by="character"
+              startOnView={false}
+              delay={0.2}
+              duration={0.9}
+            >
+              {DATA.summary}
+            </TextAnimate>
+          </div>
         </div>
       </section>
       <section id="work">
@@ -139,6 +164,11 @@ export default function Page() {
           <ContactSection />
         </BlurFade>
       </section>
+      <BlurFade delay={BLUR_FADE_DELAY * 17}>
+        <footer className="text-center text-xs text-muted-foreground pb-2">
+          © {new Date().getFullYear()} {DATA.name}
+        </footer>
+      </BlurFade>
     </main>
   );
 }
